@@ -163,7 +163,7 @@ def main():
     action_dim = env_dt.action_space.n
     
     # Load the trained model and associated parameters
-    model_path = 'models/lunar_lander_model_5000.pkl' # Typo fixed: lunar_lander_model_5000.pkl
+    model_path = '../models/lunar_lander_model_5000.pkl' 
 
     if not os.path.exists(model_path):
         print(f"Error: Model file not found at {model_path}")
