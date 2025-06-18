@@ -200,6 +200,7 @@ def main():
     
     dt_model.load_state_dict(checkpoint["model_state_dict"])
 
+    print()
     print("Model and normalization parameters loaded successfully!")
     
     input("Press Enter to continue to evaluation... ")
@@ -208,6 +209,9 @@ def main():
         NUM_EVAL_EPISODES = int(input("Enter number of episodes to watch: "))
     except ValueError:
         NUM_EVAL_EPISODES = 5 # Default if input is invalid or empty
+
+    print("Enter the expected Return to go you want: ",end="")
+    MIN_EXPERT_RETURN=int(input())
 
     # Initialize pygame
     _ = env_dt.reset()
