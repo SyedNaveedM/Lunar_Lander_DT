@@ -55,5 +55,5 @@ To set up the project locally, follow these steps:
 
 ### Training the Model
 
-The main Jupyter Notebook `lunar_lander_train.ipynb` (or the equivalent Jupyter Notebook) handles the entire training process.
+The main Jupyter Notebook `lunar_lander_train.ipynb` handles the entire training process.
 To train the Decision Transformer, simply run the cells in the notebook
